@@ -8,7 +8,12 @@ class Post extends Model
 {
     public function getPaginateByLimit(int $limit_count = 5)
     {
-    // updated_atで降順に並べたあと、limitで件数制限をかける
+    // updated_atで降順に並べたあと、ペジネーションを設定
         return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
+    }
+    
+    public function show()
+    {
+        
     }
 }
