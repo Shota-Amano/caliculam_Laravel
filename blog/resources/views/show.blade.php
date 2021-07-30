@@ -17,6 +17,7 @@
                 <p class="updated_at">更新日時 : {{ $post->updated_at }}</p>
                 
             </div>
-        <p class="back"><a href="/">back</a></p>    
+        <p class="back">[<a href="/posts/{{ $post->id }}/edit">編集</a>]</p>
+        <p class="back"><a href="/">戻る</a></p>    
     </body>
 </html>
