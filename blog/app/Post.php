@@ -17,4 +17,8 @@ class Post extends Model
     'body',
     ];
 
+dev_basis05
 }
+
+}
+
