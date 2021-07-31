@@ -3,11 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+
+use Illuminate\Http\Request;
+
 use App\Http\Requests\PostRequest;
+ master
 
 class PostController extends Controller
 {
     public function index(Post $post)
+
+    {
+        return $post->get();
+    }
+
     {   //ペジネーションの設定（1ページ5件）
         return view('index')->with(['posts' => $post->getPaginateByLimit()]);  
     }
@@ -45,5 +54,6 @@ class PostController extends Controller
     
 }
 
+ master
 }
 

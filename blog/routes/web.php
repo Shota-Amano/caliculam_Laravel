@@ -39,3 +39,7 @@ Route::get('/post/create', 'PostController@create');
 Route::post('/posts','PostController@store');
 
 
+
+Route::get('/posts', 'PostController@index');
+
+master
