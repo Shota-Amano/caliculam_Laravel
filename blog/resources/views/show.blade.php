@@ -11,11 +11,17 @@
     
     <body>
         <h1>Blog Name</h1>
-          <div class = "post">
+            <div class = "post">
                 <h3>{{ $post->title }}</a>
                 <p class="title">{{ $post->body }}</p>
-                <p class="updated_at">{{ $post->updated_at }}</p>
+                <p class="updated_at">更新日時 : {{ $post->updated_at }}</p>
                 
             </div>
+dev_basis05
+        <p class="edit">[<a href="/posts/{{ $post->id }}/edit">編集</a>]</p>
+        <p class="back"><a href="/">戻る</a></p>    
+
+        <p class="back"><a href="/">back</a></p>    
+
     </body>
 </html>
