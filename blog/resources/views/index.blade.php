@@ -11,7 +11,7 @@
     
     <body>
         <h1>Blog Name</h1>
-        <p>[<a href='/post/create'>create</a>]</p>
+        <p>[<a href='/posts/create'>create</a>]</p>
         <div class="posts">
             @foreach ($posts as $post)
                 <div class = "post">

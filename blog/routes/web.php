@@ -13,15 +13,17 @@
 //ブログ一覧画面
 Route::get('/', 'PostController@index');
 
+//新規作成画面
+Route::get('/posts/create', 'PostController@create');
+
+
+
+Route::put('/posts/{post}', 'PostController@update');
+
 //詳細画面
 Route::get('/posts/{post}', 'PostController@show');
 
-//新規作成画面
-Route::get('/post/create', 'PostController@create');
-
-Route::post('/posts','PostController@store');
-
 //編集画面
 Route::get('/posts/{post}/edit', 'PostController@edit');
-Route::put('/posts/{post}', 'PostController@update');
 
+Route::post('/posts','PostController@store');
