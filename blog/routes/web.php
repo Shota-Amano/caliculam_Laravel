@@ -12,6 +12,7 @@
 */
 //ブログ一覧画面
 Route::get('/', 'PostController@index');
+dev_basis05
 
 //新規作成画面
 Route::get('/posts/create', 'PostController@create');
@@ -27,3 +28,14 @@ Route::get('/posts/{post}', 'PostController@show');
 Route::get('/posts/{post}/edit', 'PostController@edit');
 
 Route::post('/posts','PostController@store');
+
+
+//詳細画面
+Route::get('/posts/{post}', 'PostController@show');
+
+//新規作成画面
+Route::get('/post/create', 'PostController@create');
+
+Route::post('/posts','PostController@store');
+
+

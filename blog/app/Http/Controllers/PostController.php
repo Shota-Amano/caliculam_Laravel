@@ -28,6 +28,7 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+ dev_basis05
     
     public function edit(Post $post)
     {
@@ -43,3 +44,6 @@ class PostController extends Controller
     }
     
 }
+
+}
+

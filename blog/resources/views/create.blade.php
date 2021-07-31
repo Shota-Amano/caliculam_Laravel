@@ -15,7 +15,11 @@
                 @csrf
                 <div>
                     <h2>タイトル</h2>
+dev_basis05
                     <input type="text" name="post[title]" placeholder="タイトル" value="{{ old('post.title') }}"></input>
+
+                    <input type="text" name="post[title]" placeholder="タイトル" value="{{ old('post.title') }}"/>
+
                     <p class="body__error" style="color:red">{{ $errors->first('post.title') }}</p>
                 </div>
                 <div>
