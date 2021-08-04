@@ -29,6 +29,7 @@
                 <input type="submit" value="更新"/>
             </form>
             
+master
             <p class="back">[<a href="/posts/{{ $post->id }}">戻る</a>]</p>
             
         </div>

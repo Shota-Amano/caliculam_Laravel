@@ -9,7 +9,15 @@
     
     <body>
         <h1>Blog Name</h1>
+
         <p>[<a href='/posts/create'>create</a>]</p>
+
+dev_basis05
+        <p>[<a href='/posts/create'>create</a>]</p>
+
+        <p>[<a href='/post/create'>create</a>]</p>
+
+master
         <div class="posts">
             @foreach ($posts as $post)
                 <div class = "post">

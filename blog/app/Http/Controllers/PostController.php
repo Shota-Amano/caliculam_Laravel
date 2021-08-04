@@ -3,11 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+
+use Illuminate\Http\Request;
+
 use App\Http\Requests\PostRequest;
+ master
 
 class PostController extends Controller
 {
     public function index(Post $post)
+
+    {
+        return $post->get();
+    }
+
     {   //ペジネーションの設定（1ページ5件）
         return view('index')->with(['posts' => $post->getPaginateByLimit()]);  
     }
@@ -28,6 +37,7 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+ dev_basis05
     
     public function edit(Post $post)
     {
@@ -38,6 +48,7 @@ class PostController extends Controller
     {
         $input_post = $request['post'];
         $post->fill($input_post)->save();
+
     
         return redirect('/posts/' . $post->id);
     }
@@ -47,4 +58,14 @@ class PostController extends Controller
         $post->delete();
         return redirect('/');
     }
+
+
+        return redirect('/posts/' . $post->id);
+    }
+    
+master
 }
+
+ master
+}
+
