@@ -29,6 +29,5 @@
             <p class="back">[<a href="/">戻る</a>]</p>
             
         </div>
-        
     </body>
 </html>
