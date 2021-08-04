@@ -4,18 +4,20 @@
         <meta charset="utf-8">
         <title>Blog</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
     </head>
     
     <body>
         <h1>Blog Name</h1>
+
+        <p>[<a href='/posts/create'>create</a>]</p>
+
 dev_basis05
         <p>[<a href='/posts/create'>create</a>]</p>
 
         <p>[<a href='/post/create'>create</a>]</p>
 
+master
         <div class="posts">
             @foreach ($posts as $post)
                 <div class = "post">
@@ -29,6 +31,5 @@ dev_basis05
         <div class="paginate">
             {{ $posts->links() }}
         </div>
-        
     </body>
 </html>

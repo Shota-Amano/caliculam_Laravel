@@ -30,16 +30,32 @@ Route::get('/posts/{post}/edit', 'PostController@edit');
 Route::post('/posts','PostController@store');
 
 
+//新規作成画面
+Route::get('/posts/create', 'PostController@create');
+
+
+//編集画面
+Route::get('/posts/{post}/edit', 'PostController@edit');
+
+Route::put('/posts/{post}', 'PostController@update');
+
+//削除の設定
+Route::delete('/posts/{post}', 'PostController@delete');
+
+
+
 //詳細画面
 Route::get('/posts/{post}', 'PostController@show');
-
-//新規作成画面
-Route::get('/post/create', 'PostController@create');
 
 Route::post('/posts','PostController@store');
 
 
 
+
+
+
+
 Route::get('/posts', 'PostController@index');
 
+master
 master
